@@ -9,19 +9,27 @@
 
             /* top menu starts here */
 
+body { 
+    background-image: url("./image/sca.jpg");
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .large-screen{
     display: none;
     width:100%;
 }
 
-.top-menu{
+.top-menu {
     display: flex;
+    justify-content: end;
+    width: 50%;
     align-items: center;
-    width:50%;
-}
+  }
 
 .top-menu-wrapper {
-    padding:10px;
+    padding: 10px 15px;
     display: flex;
     align-items: center;
     background-color: black;
@@ -45,7 +53,7 @@ height: 70px;
 }
 
 .top-menu-image{
-    display: flex; justify-content: end;
+    /* display: flex; justify-content: end; */
     width:50%;
 }
 
@@ -80,6 +88,7 @@ right: 61px;
 top: 10px;
 font-size: 25px;
 color: gray;
+cursor: pointer;
 }
 
 
@@ -295,18 +304,18 @@ color: gray;
 }
 
 .slider-images-one {
-    background-image: url("./image/oilcompanyonee.jpg"); background-size: cover;
+    background-image: url("./image/indexone.jpg"); background-size: cover;
     height:400px;
     background-position: center;
 }
 
 .slider-images-two {
-    background-image: url("./image/oilcompanytwo.jpg"); background-size: cover;
+    background-image: url("./image/index.jpg"); background-size: cover;
     height:400px;
     background-position: center;
 }
 .slider-images-three {
-    background-image: url("./images/oilcompanythree.jpg"); background-size: cover;
+    background-image: url("./image/sca.jpg"); background-size: cover;
     height:400px;
     background-position: center;
 }
@@ -391,6 +400,49 @@ color: gray;
     transition: .1s;
 }
 
+        /* container one starts here */
+
+.container-one-wrapper{
+    background-color: rgba(225,225,225,0.7);
+    width:100%;
+}
+
+.container-one-content{
+    background-color: rgba(225,225,225,0.7);
+    width:100%;
+}
+
+.container-one-content h1{
+    color:black;
+    text-transform: capitalize;
+    font-size: 23px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.ceo-profile-container {
+    width:90%;
+ 
+}
+
+/* .ceo-image, .ceo-writeup{
+    height:50%;
+} */
+
+.ceo-profile-wrapper{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    max-height:1100px;
+    background-color: rgba(225,225,225,0.7);
+    overflow: hidden;
+}
+
+.ceo-image img{
+    width:100%;
+    height:auto;
+}
+
 
 
 
@@ -405,6 +457,7 @@ color: gray;
     .search-icon {
         right: 81px;
         top: 10px;
+        cursor: pointer;
       }
 }
 
