@@ -110,7 +110,13 @@ cursor: pointer;
 }
 
 .overall-wrapper, .overall-container{
-    position: relative;
+    /* position: relative; */
+}
+
+.overall-wrapper{
+    position: sticky;
+    top:0;
+    z-index: 1000;
 }
 
 
