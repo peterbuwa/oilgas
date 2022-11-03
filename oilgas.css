@@ -10,11 +10,13 @@
             /* top menu starts here */
 
 body { 
-    background-image: url("./image/sca.jpg");
+    /* background-image: url("./image/sca.jpg"); */
     background-position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
 
 .large-screen{
     display: none;
@@ -35,6 +37,7 @@ body {
     background-color: black;
     color: white;
     width:100%;
+    position: sticky;
 }
 
 .hamburger {
@@ -109,6 +112,8 @@ cursor: pointer;
 .overall-wrapper, .overall-container{
     position: relative;
 }
+
+
 
 .nav-bar{
     position: absolute;
@@ -290,33 +295,93 @@ cursor: pointer;
     cursor: pointer;
 }
 
+        /* background images starts here */
+.company-image-wrapper {display: flex; justify-content: center;}
+.company-image {width:97%; height:300px;}
+.company-image img {width:100%; height:100%;}
+
+
+        /* sca technical center */
+
+.technical-center h1{
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #0b2d71;
+    padding:30px 0 0 0;
+    font-weight: bold;
+}
+
+.technical-center-content{
+    width:90%;
+}
+
+.technical-center-content p {
+    line-height: 30px;
+}
+
+.techical-center-wrapper{
+    display: flex;
+    justify-content: center;
+    padding:30px 0;
+    font-family: "Gotham Narrow A","Gotham Narrow B","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    background-color: #ccbfbf;
+}
+
 
             /* slider container-starts here */
 
 .slider-container-wrapper{
     position: relative;
+    /* background-color: white; */
+    background-image: linear-gradient(white, #ccbfbf);
+    width:100%;
+    display: flex;
+    height:300px;
 }
 
 .slider-container{
-    width:100%;
-    height:400px;
+    height:250px;
+    margin: auto;
+    width: 80%;
+    margin: auto;
     overflow: hidden;
+}
+
+.slider-one-background{
+    height:250px;
+    width:5%;
+    background-image: linear-gradient(white, #ccbfbf)
+}
+
+.slider-background-one{
+    width:100%;
+    height:50px;
+    background-image: linear-gradient(white, #ccbfbf);
+}
+
+.slider-container{
+    width:90%;
+    height:250px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .slider-images-one {
     background-image: url("./image/indexone.jpg"); background-size: cover;
-    height:400px;
+    height:250px;
     background-position: center;
 }
 
 .slider-images-two {
     background-image: url("./image/index.jpg"); background-size: cover;
-    height:400px;
+    height:250px;
     background-position: center;
 }
 .slider-images-three {
-    background-image: url("./image/sca.jpg"); background-size: cover;
-    height:400px;
+    background-image: url("./image/oilcompanyonee.jpg"); background-size: cover;
+    height:250px;
     background-position: center;
 }
 
@@ -400,49 +465,69 @@ cursor: pointer;
     transition: .1s;
 }
 
-        /* container one starts here */
+/* container one starts here */
 
 .container-one-wrapper{
-    background-color: rgba(225,225,225,0.7);
+    background-color: white;
     width:100%;
 }
+
+.container-one-content h1{
+    color:#0b2d71;
+    text-transform: capitalize;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* 
+
 
 .container-one-content{
     background-color: rgba(225,225,225,0.7);
     width:100%;
 }
 
-.container-one-content h1{
-    color:black;
-    text-transform: capitalize;
-    font-size: 23px;
-    text-align: center;
-    padding: 10px 0;
-}
 
-.ceo-profile-container {
-    width:90%;
- 
-}
 
-/* .ceo-image, .ceo-writeup{
+.ceo-image, .ceo-writeup{
     height:50%;
-} */
+} 
+
+
+*/
+
+.ceo-writeup p{
+    height:50%;
+    font-size: 17px;
+    /* text-align: justify; */
+    padding:20px 0;
+    line-height: 30px;
+} 
 
 .ceo-profile-wrapper{
     width:100%;
     display: flex;
     justify-content: center;
-    max-height:1100px;
-    background-color: rgba(225,225,225,0.7);
+    /* background-color: rgba(225,225,225,0.7); */
     overflow: hidden;
+}
+.ceo-profile-container {
+    width:90%;
+ 
 }
 
 .ceo-image img{
     width:100%;
-    height:auto;
+    height:230px;
 }
 
+.ceo-image {
+    display: flex;
+    justify-content: center;
+    width:70%;
+    margin: auto;
+}
 
 
 
@@ -475,6 +560,8 @@ cursor: pointer;
 
       .slider-container{
         height:600px;
+        width: 90%;
+        margin: auto;
     }
     
     .slider-images-one {

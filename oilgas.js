@@ -25,10 +25,17 @@ let bottomSearch = document.querySelector(".bottom-search");
 let left = document.querySelector(".fa-angle-left")
 let right = document.querySelector(".fa-angle-right")
 
+hamburger.addEventListener("click", ()=>{
+    navBar.style.width = "100%";
+    })
+    
+    close.addEventListener("click", ()=>{
+        navBar.style.width = "0%";
+    })
+
 
 let sliderIndex = 0;
 plusSlides();
-
 function plusSlides(){
     let images = document.getElementsByClassName("slider-images")
     for(i = 0; i < images.length; i++){
@@ -182,14 +189,7 @@ buttonLinkSix.addEventListener("click", ()=>{
     menuButtonFive.style.backgroundColor = "black"
 })
 
-hamburger.addEventListener("click", ()=>{
-navBar.style.width = "100%";
-})
-
-close.addEventListener("click", ()=>{
-    navBar.style.width = "0%";
-})
 
 .bottomMenuOne.addEventListener("click", ()=>{
-
+    
 })
