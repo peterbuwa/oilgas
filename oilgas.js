@@ -24,6 +24,36 @@ let searchContainerWrapper = document.querySelector(".search-container-wrapper")
 let bottomSearch = document.querySelector(".bottom-search");
 let left = document.querySelector(".fa-angle-left")
 let right = document.querySelector(".fa-angle-right")
+let scaSecondLeft = document.querySelector(".sca-second-icon-wrapper span")
+let scaSecondRight = document.querySelector(".sca-second-icon-wrapper-right span")
+
+
+scaSecondLeft.addEventListener("click", function(){
+    let slide = document.getElementsByClassName("sca-rightup-content");
+    sliderIndex += 1;
+    if (sliderIndex > slide.length){
+        sliderIndex = 1;
+    }
+
+    for (let i = 0; i < slide.length; i++){
+        slide[i].style.display = "none"
+    }
+    slide[sliderIndex - 1].style.display = "flex";
+})
+
+scaSecondRight.addEventListener("click", function(){
+    let slide = document.getElementsByClassName("sca-rightup-content");
+
+    sliderIndex -= 1;
+    if(sliderIndex < 1){
+        sliderIndex = slide.length;
+    }
+    for(i = 0; i < slide.length; i++){
+        slide[i].style.display = "none";
+        slide[sliderIndex - 1].style.display = "flex";
+    }
+    
+})
 
 hamburger.addEventListener("click", ()=>{
     navBar.style.width = "100%";

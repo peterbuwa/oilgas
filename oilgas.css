@@ -571,7 +571,7 @@ cursor: pointer;
 .meet-leader-image {
     text-align: center;
     width:70%;
-    border: 2px solid #ccbfbf;
+    border: 2px solid #007eac;
     margin:20px 0;
 }
 
@@ -601,20 +601,70 @@ cursor: pointer;
     /* sca second slider starts here */
 .sca-second-slider-wrapper, .sca-second-slider-content{
     width:100%;
+    height:200px;
+    overflow: hidden;
+    background-color: #ccbfbf;
 }
 
-.sca-second-icon-wrapper{
+.sca-second-slider-wrapper{
+    padding:30px 0;
+}
+
+.sca-second-icon-wrapper, .sca-second-icon-wrapper-right{
     width:10%;
 }
 
 .sca-second-slider{
-    width:80%
+    width:80%;
+    border:1px solid gray;
+    height:200px;
 }
 
 .sca-second-slider-content{
     display: flex;
 }
 
+.sca-second-icon-wrapper, .sca-second-icon-wrapper-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sca-second-icon-wrapper span, .sca-second-icon-wrapper-right span{
+    width:100%;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(170,170,170);
+}
+
+
+.sca-second-icon-wrapper span:hover, .sca-second-icon-wrapper-right span:hover{
+    background-color: #007eac;
+    color:white;
+}
+
+.sca-second-icon{
+    font-size:30px;
+}
+
+.sca-rightup-content h4{
+    padding:30px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0b2d71;
+}
+
+.sca-rightup-content {
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @keyframes height{
     0%{height:0;}
