@@ -223,3 +223,24 @@ buttonLinkSix.addEventListener("click", ()=>{
 .bottomMenuOne.addEventListener("click", ()=>{
     
 })
+
+// let oilWorker = [
+//     {
+//         img:".../image/oilworkerone.jpg",
+//         name: "peter"
+//     }
+// ];
+
+// let showWorkers = oilWorker.map((e)=>{
+//  return `
+//         <div class="employees-container">
+//             <div class="employees-images">
+//                 <img src=${e.img} />
+//                 </div>
+//                 </div>
+//                 <p>${e.name}</p>
+//  `
+// })
+
+// let employeesContainerWrapper = document.querySelector(".employees-container-wrapper");
+// employeesContainerWrapper.innerHTML =`${showWorkers.join(" ")}` ;
