@@ -697,25 +697,129 @@ cursor: pointer;
 }
 
 .employees-container{
-    width:90%;
+    width:80%;
     padding:10px 0;
+   
 }
 
 .employees-images img{
     width:100%;
     height:100%;
     box-shadow: 1px 1px 5px gray;
-    border-radius:5px;
+    border-top-right-radius:5px;
+    border-top-left-radius: 5px;
 }
 
 .employees-images{
     border-radius:5px;
     /* box-shadow: 1px 1px gray; */
+    height:130px;
+  
+}
+
+.employeee-image-content p{
+    text-align: center;
+    font-size:11px;
+    color:white;;
+    padding:5px 0;
+}
+
+.employeee-image-content{
+/* border:1px solid gray; */
+background-color: blue;
+
+}
+
+    /* project-portfolio-starts-here */
+
+.project-portfolio-wrapper{
+    background-color: #ccbfbf;
+    padding:20px 0;
+}
+
+.project-portfolio-container-header-content{
+    color:#0b2d71;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.project-portfolio-container-header{
+    font-size:25px;
+    color:#0b2d71;
+    text-align:center;
+    padding:10px 0;
+    font-weight: bold;
+}
+
+.project-portfolio-container{
+    width:90%;
+    margin:auto;
+}
+
+.project-portfolio-container-content{
+    padding:20px;
+    word-spacing: 10px;
+}
+
+.portfolio-project-image-content{
+    width:80%;
+    border: 1px solid gray;
+    margin: 20px 0;
+}
+
+.portfolio-project-image img{
+    width:100%;
+    height:auto;
+}
+
+.portfolio-project-image{
+    overflow: hidden;
+}
+
+.portfolio-project-image img:hover{
+    animation: large .5s ease;
+}
+
+.portfolio-project-image-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-project-image-wrapper{
+    padding:20px 0;
+}
+
+.portfolio-project-content h2{
+ text-align: center;
+ color: #0b2d71;
+ font-size: 25px;
+ font-weight: bold;
+}
+
+
+.portfolio-project-content p{
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 30px;
+}
+
+.portfolio-project-content{
+    /* border-left:1px solid gray;
+    border-right:1px solid gray;
+    border-bottom:1px solid gray; */
 }
 
 @keyframes height{
     0%{height:0;}
     100%{height:100%;}
+}
+
+@keyframes large{
+    0%{scale:1}
+    100%{scale:1.1}
 }
 
 @media screen and (min-width:420px){
