@@ -760,6 +760,7 @@ background-color: blue;
 .project-portfolio-container-content{
     padding:20px;
     word-spacing: 10px;
+    font-size: 18px;
 }
 
 .portfolio-project-image-content{
@@ -778,7 +779,8 @@ background-color: blue;
 }
 
 .portfolio-project-image img:hover{
-    animation: large .5s ease;
+    scale:1.1;
+    transition: .5s;
 }
 
 .portfolio-project-image-container{
@@ -789,6 +791,7 @@ background-color: blue;
 
 .portfolio-project-image-wrapper{
     padding:20px 0;
+    background-color: #ccbfbf;
 }
 
 .portfolio-project-content h2{
@@ -802,14 +805,68 @@ background-color: blue;
 .portfolio-project-content p{
     font-size: 18px;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px ;
     line-height: 30px;
 }
 
-.portfolio-project-content{
-    /* border-left:1px solid gray;
+/* .portfolio-project-content{
+    border-left:1px solid gray;
     border-right:1px solid gray;
-    border-bottom:1px solid gray; */
+    border-bottom:1px solid gray;
+} */
+
+        /* footer starts here */
+
+.footer {
+    background-color:blue;
+    min-height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube, .fa-linkedin {
+    color:white;
+    margin:5px;
+    cursor:pointer
+}
+
+.footer-container p {
+    color: white;
+    font-size: 13px;
+    padding:10px 0;
+    text-align: center;
+}
+
+.footer-container{
+    width:80%;
+    height:50px;
+}
+
+.copy-right{
+    width:10px;
+    /* height:10px; */
+    border-radius:50%;
+    border:1px solid gray;
+    padding:2px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.copyright p{
+    font-size:10px;
+    color:white;
+    white-space: wrap;
+}
+
+
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes height{
@@ -817,10 +874,10 @@ background-color: blue;
     100%{height:100%;}
 }
 
-@keyframes large{
+/* @keyframes large{
     0%{scale:1}
     100%{scale:1.1}
-}
+} */
 
 @media screen and (min-width:420px){
     .search-icon {
